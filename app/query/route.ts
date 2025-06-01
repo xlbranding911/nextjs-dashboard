@@ -12,6 +12,8 @@
 
  	return data;
  }
+
+export async function GET() {
    try {
    	return Response.json(await listInvoices());
    } catch (error) {
